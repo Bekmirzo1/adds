@@ -123,10 +123,96 @@
                 </div>
             </div>
         </header>
+        <div class="full">
+            <div class="full__container _container">
+                <div class="full__content">
+                    <div class="full__content-wrapper">
+                        <a href="#thanks" class="btn btn_white _popup-link">
+                            Thanks
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- *Page -->
-        <main class="page">
+        <main class="page ">
+
         </main>
     </div>
+    <div class="popup popup_popup">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_login login-popup">
+	<div class="popup__content">
+		<div class="popup__body login-popup__body">
+			<h3 class="login-popup__title popup__title">Log In</h3>
+			<form action="" class="login-popup__form">
+				<div class="login-popup__rows form__rows">
+					<div class="login-popup__input form__input">
+						<input autocomplete="off" type="text" class="input" placeholder="Enter your e-mail">
+					</div>
+					<div class="login-popup__input form__input form__input_password _error">
+						<input autocomplete="off" type="password" class="input" placeholder="Password">
+						<span class="form__eye">
+							<img src="img/icons/eye.svg" alt="">
+						</span>
+						<div class="form__error">Password is wrong</div>
+					</div>
+				</div>
+				<button type="submit" class="login-popup__button btn btn_main">
+					Log In
+				</button>
+			</form>
+			<div class="login-popup__sign">
+				<div class="login-popup__sign-text">
+					Dont have an account?
+				</div>
+				<a href="#signup" class="login-popup__sign-link btn _popup-link">
+					Sign Up
+				</a>
+			</div>
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_thanks thanks-popup">
+	<div class="popup__content">
+		<div class="popup__body thanks-popup__body">
+			<div class="thanks-popup__mark">
+				<img src="img/icons/chek-big.svg" alt="">
+			</div>
+			<h3 class="thanks-popup__title popup__title">Thank you!</h3>
+			<div class="thanks-popup__text">
+				We will contact you as soon <span>as possible</span>
+			</div>
+			<a href="" class="thanks-popup__button btn btn_main">
+				Close
+			</a>
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_signup signup-popup">
+</div>
+<div class="popup popup_massagename-message">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+		</div>
+	</div>
+</div>
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
     <script src="js/vendors.min.js"></script>
 <script src="js/app.min.js"></script>
 </body>
