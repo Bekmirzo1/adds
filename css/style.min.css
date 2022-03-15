@@ -2898,7 +2898,7 @@ textarea.input {
   max-width: 1114px;
   padding-top: 80px;
   padding-bottom: 80px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 @media (max-width: 1240px) {
   .activities__container {
