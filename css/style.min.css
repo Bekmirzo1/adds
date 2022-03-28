@@ -414,13 +414,14 @@ textarea:focus {
 .input {
   border-radius: 0 !important;
   width: 100%;
+  height: 100%;
   display: block;
-  padding: 0px 0px;
+  padding: 0px;
   background-color: transparent;
   font-size: 18px;
   line-height: 140%;
   font-weight: 500;
-  color: #d1d1d1;
+  color: #1f2024;
 }
 @media (max-width: 767.98px) {
   .input {
@@ -603,19 +604,19 @@ textarea.input {
   display: flex;
   flex-direction: column;
   background-color: #0074ff;
+  padding: 72px 0px 45px 0px;
+}
+@media (max-width: 1023.98px) {
+  .full {
+    padding: 60px 0px 50px 0px;
+  }
 }
 .full__container {
-  padding-bottom: 45px;
   color: #fff;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-@media (max-width: 1023.98px) {
-  .full__container {
-    padding-bottom: 50px;
-  }
 }
 .full__content {
   width: 100%;
@@ -1151,17 +1152,28 @@ textarea.input {
   white-space: nowrap;
 }
 .header {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+}
+.header._scroll .header__wrapper {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.header__wrapper {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 99;
   background-color: #fff;
+  transition: all 0.3s ease 0s;
 }
 .header__body {
   display: flex;
   align-items: center;
-  min-height: 86px;
+  min-height: 72px;
   font-family: "inter";
 }
 @media (max-width: 1023.98px) {
@@ -1176,6 +1188,8 @@ textarea.input {
 }
 .header__logo {
   margin: 0px 38px 0px 0px;
+  width: 162px;
+  flex: 0 0 162px;
 }
 @media (max-width: 1023.98px) {
   .header__logo {
@@ -1196,11 +1210,6 @@ textarea.input {
 .header__action .btn {
   font-family: "gothampro";
 }
-@media (min-width: 767.98px) {
-  .header__action .btn {
-    min-height: 50px;
-  }
-}
 @media (min-width: 1023.98px) {
   .header__language {
     margin: 0px 30px 0px 0px;
@@ -1210,6 +1219,7 @@ textarea.input {
   margin: 0px 20px 0px 0px;
   min-width: 144px;
   font-size: 16px;
+  min-height: 44px;
 }
 @media (max-width: 1023.98px) {
   .header__button {
@@ -1230,7 +1240,8 @@ textarea.input {
     font-size: 18px;
     border-radius: 8px;
     border: 2px solid #1f2024;
-    padding: 12px 12px;
+    padding: 8px 12px;
+    min-height: 44px;
   }
 }
 @media (max-width: 1023.98px) {
@@ -1657,10 +1668,13 @@ textarea.input {
 
 .page {
   flex: 1 1 auto;
-  padding-top: 86px;
+  position: relative;
+}
+.page._no-full {
+  padding-top: 72px;
 }
 @media (max-width: 1023.98px) {
-  .page {
+  .page._no-full {
     padding-top: 60px;
   }
 }
@@ -2048,6 +2062,7 @@ textarea.input {
 }
 .coins-transparancy__coin {
   position: absolute;
+  overflow: visible;
 }
 .coins-transparancy__coin_1 {
   width: 33px;
@@ -3841,6 +3856,20 @@ textarea.input {
     background: url(../img/mediation/full/wave.svg) 50% 100% no-repeat;
   }
 }
+.full-mediation__animation {
+  margin: -100px 0px 0px 0px;
+  pointer-events: none;
+}
+@media (max-width: 1023.98px) {
+  .full-mediation__animation {
+    margin: -40px 0px 0px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .full-mediation__animation {
+    margin: 0;
+  }
+}
 .full-mediation__animation-body {
   display: flex;
   justify-content: space-between;
@@ -3915,7 +3944,7 @@ textarea.input {
   display: flex;
   justify-content: center;
   padding: 72px 0px 75px 0px;
-  margin: 0px 0px 46px 0px;
+  margin: 0px 0px 46px 60px;
 }
 @media (max-width: 1260px) {
   .rtb__demonstrate {
