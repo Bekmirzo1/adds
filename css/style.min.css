@@ -218,7 +218,7 @@ body._lock {
   padding: 11px 20px;
   border-radius: 8px;
   background-color: #fff;
-  border: 2px solid #cdd9e8;
+  border: 1px solid #cdd9e8;
   position: relative;
   min-height: 53px;
   transition: all 0.3s ease 0s;
@@ -289,7 +289,7 @@ body._lock {
 }
 @media (any-hover: hover) {
   .btn_main {
-    border: 2px solid #0074ff;
+    border: 1px solid #0074ff;
     transition: all 0.3s ease 0s;
   }
   .btn_main:hover {
@@ -383,7 +383,7 @@ body._lock {
 }
 .select__title {
   color: #1f2024;
-  border: 2px solid #cdd9e8;
+  border: 1px solid #cdd9e8;
   background-color: #fff;
   cursor: pointer;
   border-radius: 8px;
@@ -461,7 +461,7 @@ body._lock {
   min-width: 100%;
   left: 0;
   background-color: #fff;
-  border: 2px solid #efefef;
+  border: 1px solid #efefef;
   box-shadow: 4px 4px 20px rgba(0, 8, 81, 0.1);
   font-size: 18px;
   line-height: 120%;
@@ -1388,7 +1388,7 @@ textarea.input {
     min-width: 98px;
     font-size: 18px;
     border-radius: 8px;
-    border: 2px solid #1f2024;
+    border: 1px solid #1f2024;
     padding: 8px 12px;
     min-height: 44px;
   }
@@ -1543,7 +1543,7 @@ textarea.input {
   align-items: center;
   flex-direction: row-reverse;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
 }
 @media (max-width: 1023.98px) {
   .language-header__value {
@@ -1567,7 +1567,7 @@ textarea.input {
 @media (min-width: 1023.98px) {
   .language-header__items {
     border-radius: 8px;
-    margin: 30px 0px 0px 0px;
+    margin: 23px 0px 0px 0px;
     padding: 10px 0px;
     box-shadow: 0px 4px 12px rgba(2, 14, 5, 0.14);
   }
@@ -2110,6 +2110,7 @@ textarea.input {
 }
 .fullscreen__cat-svg .stroke-white {
   opacity: 0;
+  stroke-width: 3px;
   stroke: #fff;
 }
 @media (max-width: 767.98px) {
@@ -2887,6 +2888,7 @@ textarea.input {
   flex: 0 0 192px;
 }
 .cat-animation__cats .stroke-white {
+  stroke-width: 3px;
   opacity: 0;
   stroke: #fff;
 }
@@ -3544,7 +3546,7 @@ textarea.input {
 }
 .animation-hug__cat {
   width: 350px;
-  pointer-events: none;
+  cursor: pointer;
 }
 @media (max-width: 1260px) {
   .animation-hug__cat {
@@ -3593,7 +3595,7 @@ textarea.input {
   top: -120%;
   right: 46%;
   width: 218px;
-  pointer-events: none;
+  cursor: pointer;
 }
 @media (max-width: 1023.98px) {
   .animation-hug__click-direction {
