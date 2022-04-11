@@ -1841,6 +1841,15 @@ textarea.input {
   justify-content: flex-end;
 }
 @media (max-width: 767.98px) {
+  .fullscreen__cat-cat {
+    max-width: 68.6567164179%;
+  }
+}
+.fullscreen__cat-cat img,
+.fullscreen__cat-cat video {
+  max-width: 100%;
+}
+@media (max-width: 767.98px) {
   .fullscreen__cat-animation {
     max-width: 68.6567164179%;
   }
@@ -1852,7 +1861,7 @@ textarea.input {
 .fullscreen__cat-line {
   position: relative;
   z-index: 10;
-  background: #0174ff;
+  background: #0074ff;
 }
 
 .watch-main {
@@ -4841,6 +4850,7 @@ textarea.input {
   }
 }
 .full-mediation__cat {
+  position: relative;
   flex: 0 0 192px;
 }
 @media (max-width: 1023.98px) {
@@ -4852,6 +4862,13 @@ textarea.input {
   .full-mediation__cat {
     display: none;
   }
+}
+.full-mediation__cat-coin {
+  position: absolute;
+  width: 16.6666666667%;
+  top: 52%;
+  left: -10%;
+  transform: rotate(46.42deg);
 }
 .rtb {
   padding-top: 120px;
