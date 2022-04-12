@@ -5428,7 +5428,7 @@ textarea.input {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden !important;
   position: relative;
 }
 .chart-reasons__circle::before {
@@ -5458,6 +5458,7 @@ textarea.input {
   left: 0;
   z-index: 2;
   transition: all 0.3s linear 0s;
+  overflow: hidden;
 }
 .chart-reasons__line::after {
   content: "";
@@ -5478,6 +5479,7 @@ textarea.input {
   justify-content: center;
   border-radius: 50%;
   position: relative;
+  overflow: hidden;
   z-index: 4;
   background-color: #fff;
 }
