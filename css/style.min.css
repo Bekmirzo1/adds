@@ -5428,8 +5428,9 @@ textarea.input {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  overflow: hidden !important;
+  overflow: hidden;
   position: relative;
+  transform: translateZ(0);
 }
 .chart-reasons__circle::before {
   content: "";
@@ -5449,6 +5450,7 @@ textarea.input {
   top: 0;
   right: 0;
   z-index: 3;
+  overflow: hidden;
 }
 .chart-reasons__line {
   position: absolute;
@@ -5460,6 +5462,11 @@ textarea.input {
   transition: all 0.3s linear 0s;
   overflow: hidden;
 }
+@media (max-width: 767.98px) {
+  .chart-reasons__line {
+    border-radius: 50%;
+  }
+}
 .chart-reasons__line::after {
   content: "";
   position: absolute;
@@ -5469,6 +5476,7 @@ textarea.input {
   left: 0;
   background-color: #0074ff;
   z-index: 2;
+  overflow: hidden;
 }
 .chart-reasons__wrapper {
   width: calc(100% - 4px);
@@ -5506,6 +5514,7 @@ textarea.input {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .chart-reasons__image {
   width: 66.2251655629%;
@@ -5513,6 +5522,7 @@ textarea.input {
   flex: 0 0 66.2251655629%;
   margin: 0px 0px 0px 2.3178807947%;
   position: relative;
+  overflow: hidden;
 }
 .chart-reasons__image img {
   position: absolute;
