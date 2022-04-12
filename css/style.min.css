@@ -3179,6 +3179,7 @@ textarea.input {
 .animation-hug__cat img,
 .animation-hug__cat video {
   max-width: 100%;
+  pointer-events: none;
 }
 .animation-hug__click {
   position: relative;
@@ -4714,11 +4715,13 @@ textarea.input {
   max-width: 100%;
 }
 .full-mediation__man {
-  flex: 0 0 527px;
+  flex: 0 0 570px;
+  transform: translate(-4.7438330171%, 6.9255147043%);
 }
 @media (max-width: 1023.98px) {
   .full-mediation__man {
-    flex: 0 0 52.8455284553%;
+    flex: 0 0 57.9268292683%;
+    margin: 0;
   }
 }
 @media (max-width: 479.98px) {
@@ -4728,11 +4731,12 @@ textarea.input {
 }
 .full-mediation__cat {
   position: relative;
-  flex: 0 0 192px;
+  flex: 0 0 220px;
+  transform: translate(10.4166666667%, 4.6875%);
 }
 @media (max-width: 1023.98px) {
   .full-mediation__cat {
-    flex: 0 0 19.3089430894%;
+    flex: 0 0 22.3577235772%;
   }
 }
 @media (max-width: 479.98px) {
