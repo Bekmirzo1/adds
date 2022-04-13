@@ -961,6 +961,16 @@ textarea.input {
   text-align: center;
   max-width: 480px;
 }
+@media (min-width: 767.98px) {
+  .thanks-popup__body {
+    padding: 40px 35px;
+  }
+}
+@media (max-width: 479.98px) {
+  .thanks-popup__body {
+    padding: 30px 16px 16px 16px;
+  }
+}
 .thanks-popup__mark {
   margin: 0px 0px 12px 0px;
 }
@@ -971,13 +981,29 @@ textarea.input {
   font-size: 40px;
   margin: 0px 0px 12px 0px;
 }
+@media (max-width: 767.98px) {
+  .thanks-popup__title {
+    font-size: 32px;
+  }
+}
 .thanks-popup__text {
   font-size: 16px;
   line-height: 120%;
   margin: 0px 0px 40px 0px;
+  font-weight: 400;
+}
+@media (max-width: 767.98px) {
+  .thanks-popup__text {
+    margin: 0px 0px 31px 0px;
+  }
 }
 .thanks-popup__text span {
   white-space: nowrap;
+}
+@media (max-width: 479.98px) {
+  .thanks-popup__text p {
+    display: inline;
+  }
 }
 .header {
   position: absolute;
@@ -1525,17 +1551,17 @@ textarea.input {
 .fullscreen__container {
   overflow: hidden;
   position: relative;
-  margin-bottom: 79px;
+  padding-bottom: 79px;
 }
 @media (max-width: 1240px) {
   .fullscreen__container {
-    margin-bottom: calc(60px + 19 * ((100vw - 375px) / 865));
+    padding-bottom: calc(60px + 19 * ((100vw - 375px) / 865));
   }
 }
 @media (max-width: 479.98px) {
   .fullscreen__container {
     min-height: 100vh;
-    margin: 0px 0px 100px 0px;
+    padding-bottom: 75px;
   }
 }
 .fullscreen__content {
@@ -3180,6 +3206,9 @@ textarea.input {
 .animation-hug__cat video {
   max-width: 100%;
   pointer-events: none;
+}
+.animation-hug__cat-anim {
+  display: none;
 }
 .animation-hug__click {
   position: relative;
@@ -5450,7 +5479,6 @@ textarea.input {
   top: 0;
   right: 0;
   z-index: 3;
-  overflow: hidden;
 }
 .chart-reasons__line {
   position: absolute;
@@ -5460,7 +5488,6 @@ textarea.input {
   left: 0;
   z-index: 2;
   transition: all 0.3s linear 0s;
-  overflow: hidden;
 }
 @media (max-width: 767.98px) {
   .chart-reasons__line {
@@ -5476,7 +5503,6 @@ textarea.input {
   left: 0;
   background-color: #0074ff;
   z-index: 2;
-  overflow: hidden;
 }
 .chart-reasons__wrapper {
   width: calc(100% - 4px);
@@ -5487,7 +5513,6 @@ textarea.input {
   justify-content: center;
   border-radius: 50%;
   position: relative;
-  overflow: hidden;
   z-index: 4;
   background-color: #fff;
 }
