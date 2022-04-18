@@ -712,6 +712,29 @@ textarea.input {
   position: absolute;
 }
 
+._anim-default._anim-items {
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+._anim-default._anim-items._anim {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+}
+
+._anim-inner {
+  overflow: hidden;
+}
+._anim-inner ._anim-items {
+  display: block;
+  transition: all 0.8s ease 0s;
+  transform: translate(0, 100%);
+}
+._anim-inner ._anim-items._anim {
+  transform: translate(0, 0%);
+}
+
 ._ibg {
   position: relative;
 }
@@ -1570,8 +1593,12 @@ textarea.input {
 }
 @media (max-width: 767.98px) {
   .fullscreen__content {
-    padding: 50px 0px 43px 0px;
+    padding: 90px 0px 43px 0px;
   }
+}
+.fullscreen__content-wrapper {
+  position: relative;
+  z-index: 1;
 }
 .fullscreen__title {
   font-size: 110px;
@@ -1607,6 +1634,9 @@ textarea.input {
     margin: 0px 0px 16px 0px;
   }
 }
+.fullscreen__subtitle ._anim-items {
+  transition-delay: 0.4s;
+}
 .fullscreen__text {
   font-size: 18px;
   margin: 0px 0px 40px 0px;
@@ -1617,6 +1647,12 @@ textarea.input {
     font-size: 16px;
     margin: 0px 0px 30px 0px;
   }
+}
+.fullscreen__text ._anim-items {
+  transition-delay: 0.8s;
+}
+.fullscreen__button-parent ._anim-items {
+  transition-delay: 1.2s;
 }
 .fullscreen__cat {
   display: flex;
@@ -1742,6 +1778,10 @@ textarea.input {
   display: flex;
   justify-content: flex-end;
 }
+.fullscreen__cat-cat._anim-items {
+  transform: translate(20%, 0);
+  transition-delay: 1.6s;
+}
 @media (max-width: 767.98px) {
   .fullscreen__cat-cat {
     max-width: 68.6567164179%;
@@ -1764,6 +1804,196 @@ textarea.input {
   position: relative;
   z-index: 10;
   background: #0074ff;
+}
+.fullscreen__coin {
+  top: 0%;
+  left: 0%;
+}
+.fullscreen__coin_1 {
+  top: 60%;
+  left: 10%;
+  width: 38.26px;
+}
+@media (max-width: 1260px) {
+  .fullscreen__coin_1 {
+    width: 34.434px;
+    left: 5%;
+  }
+}
+@media (max-width: 1023.98px) {
+  .fullscreen__coin_1 {
+    width: 30.608px;
+    left: 14%;
+    top: 68%;
+  }
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_1 {
+    width: 34.04px;
+    left: -1%;
+    top: -9%;
+  }
+}
+.fullscreen__coin_1 img {
+  transform: rotate(22.28deg);
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_1 img {
+    transform: rotate(42.18deg);
+  }
+}
+.fullscreen__coin_2 {
+  width: 26.27px;
+  top: 32%;
+  left: 19%;
+}
+@media (max-width: 1260px) {
+  .fullscreen__coin_2 {
+    top: 25%;
+    width: 23.643px;
+  }
+}
+@media (max-width: 1023.98px) {
+  .fullscreen__coin_2 {
+    width: 21.016px;
+    left: 9%;
+    top: 2%;
+  }
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_2 {
+    display: none;
+  }
+}
+.fullscreen__coin_2 img {
+  transform: rotate(114.61deg);
+}
+.fullscreen__coin_3 {
+  top: 24%;
+  left: 71%;
+}
+@media (max-width: 1023.98px) {
+  .fullscreen__coin_3 {
+    top: 18%;
+    left: 89%;
+  }
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_3 {
+    width: 23.68px;
+    top: -24%;
+    left: 64%;
+  }
+}
+.fullscreen__coin_3 img {
+  transform: matrix(-0.77, 0.64, 0.64, 0.77, 0, 0);
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_3 img {
+    transform: matrix(-0.6, 0.8, 0.8, 0.6, 0, 0);
+  }
+}
+.fullscreen__coin_4 {
+  top: 36%;
+  left: 80%;
+}
+@media (max-width: 1023.98px) {
+  .fullscreen__coin_4 {
+    top: 80%;
+    left: 83%;
+  }
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_4 {
+    width: 26.28px;
+    top: 18%;
+    left: 96%;
+  }
+}
+.fullscreen__coin_4 img {
+  transform: matrix(0.7, 0.71, 0.71, -0.7, 0, 0);
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_4 img {
+    transform: matrix(-0.86, 0.51, 0.51, 0.86, 0, 0);
+  }
+}
+.fullscreen__coin_5 {
+  width: 18.43px;
+  top: 106%;
+  left: 81%;
+}
+.fullscreen__coin_5 img {
+  transform: matrix(-0.86, 0.51, 0.51, 0.86, 0, 0);
+}
+@media (min-width: 767.98px) {
+  .fullscreen__coin_5 {
+    display: none;
+  }
+}
+.fullscreen__coin_6 {
+  width: 17.64px;
+  top: 117%;
+  left: 16%;
+}
+.fullscreen__coin_6 img {
+  transform: matrix(-0.86, 0.51, 0.51, 0.86, 0, 0);
+}
+@media (min-width: 767.98px) {
+  .fullscreen__coin_6 {
+    display: none;
+  }
+}
+.fullscreen__coin_7 {
+  width: 23.68px;
+  top: 100%;
+  left: 5%;
+}
+.fullscreen__coin_7 img {
+  transform: matrix(-0.96, -0.29, -0.29, 0.96, 0, 0);
+}
+@media (min-width: 767.98px) {
+  .fullscreen__coin_7 {
+    display: none;
+  }
+}
+.fullscreen__coin._anim-items._anim .fullscreen__coin-body {
+  animation: bounceIn 1s ease 2s both, coins-rotate 3s linear 3.2s infinite alternate;
+}
+@keyframes coins-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 .watch-main {
