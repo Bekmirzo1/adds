@@ -1584,7 +1584,7 @@ textarea.input {
 @media (max-width: 479.98px) {
   .fullscreen__container {
     min-height: 100vh;
-    padding-bottom: 75px;
+    padding-bottom: 110px;
   }
 }
 .fullscreen__content {
@@ -1809,10 +1809,30 @@ textarea.input {
   top: 0%;
   left: 0%;
 }
+.fullscreen__coin._anim {
+  animation: coins-rotate 6s linear 3.2s infinite alternate;
+}
+.fullscreen__coin._anim .fullscreen__coin-body {
+  animation: bounceIn 1s ease 2s both;
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin._anim {
+    animation-name: coins-rotate-mob;
+    animation-duration: 4s;
+  }
+}
 .fullscreen__coin_1 {
   top: 60%;
   left: 10%;
   width: 38.26px;
+}
+.fullscreen__coin_1._anim {
+  animation-duration: 5s;
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_1._anim {
+    animation-duration: 4s;
+  }
 }
 @media (max-width: 1260px) {
   .fullscreen__coin_1 {
@@ -1847,6 +1867,10 @@ textarea.input {
   top: 32%;
   left: 19%;
 }
+.fullscreen__coin_2._anim {
+  animation-direction: reverse;
+  animation-duration: 4s;
+}
 @media (max-width: 1260px) {
   .fullscreen__coin_2 {
     top: 25%;
@@ -1871,6 +1895,14 @@ textarea.input {
 .fullscreen__coin_3 {
   top: 24%;
   left: 71%;
+}
+.fullscreen__coin_3._anim {
+  animation-duration: 3.5s;
+}
+@media (max-width: 767.98px) {
+  .fullscreen__coin_3._anim {
+    animation-duration: 3s;
+  }
 }
 @media (max-width: 1023.98px) {
   .fullscreen__coin_3 {
@@ -1909,6 +1941,9 @@ textarea.input {
     top: 18%;
     left: 96%;
   }
+  .fullscreen__coin_4._anim {
+    animation-duration: 3.5s;
+  }
 }
 .fullscreen__coin_4 img {
   transform: matrix(0.7, 0.71, 0.71, -0.7, 0, 0);
@@ -1923,6 +1958,9 @@ textarea.input {
   top: 106%;
   left: 81%;
 }
+.fullscreen__coin_5._anim {
+  animation-duration: 2.5s;
+}
 .fullscreen__coin_5 img {
   transform: matrix(-0.86, 0.51, 0.51, 0.86, 0, 0);
 }
@@ -1935,6 +1973,9 @@ textarea.input {
   width: 17.64px;
   top: 117%;
   left: 16%;
+}
+.fullscreen__coin_6._anim {
+  animation-duration: 2.5s;
 }
 .fullscreen__coin_6 img {
   transform: matrix(-0.86, 0.51, 0.51, 0.86, 0, 0);
@@ -1949,6 +1990,9 @@ textarea.input {
   top: 100%;
   left: 5%;
 }
+.fullscreen__coin_7._anim {
+  animation-duration: 3s;
+}
 .fullscreen__coin_7 img {
   transform: matrix(-0.96, -0.29, -0.29, 0.96, 0, 0);
 }
@@ -1957,15 +2001,26 @@ textarea.input {
     display: none;
   }
 }
-.fullscreen__coin._anim-items._anim .fullscreen__coin-body {
-  animation: bounceIn 1s ease 2s both, coins-rotate 3s linear 3.2s infinite alternate;
-}
 @keyframes coins-rotate {
   0% {
     transform: rotate(0deg);
   }
-  100% {
+  50% {
     transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes coins-rotate-mob {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 @keyframes bounceIn {
@@ -2802,6 +2857,7 @@ textarea.input {
 
 .cat-test {
   width: 100%;
+  overflow: hidden;
 }
 .cat-test__body {
   display: flex;
