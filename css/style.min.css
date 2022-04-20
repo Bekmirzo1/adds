@@ -1778,18 +1778,23 @@ textarea.input {
   display: flex;
   justify-content: flex-end;
 }
+.fullscreen__cat-cat {
+  width: 400px;
+}
 .fullscreen__cat-cat._anim-items {
   transform: translate(20%, 0);
   transition-delay: 1.6s;
 }
 @media (max-width: 767.98px) {
   .fullscreen__cat-cat {
-    max-width: 68.6567164179%;
+    max-width: 59.7014925373%;
+    width: 100%;
   }
 }
 .fullscreen__cat-cat img,
 .fullscreen__cat-cat video {
   max-width: 100%;
+  transform: translate(1%, 7.1138211382%);
 }
 @media (max-width: 767.98px) {
   .fullscreen__cat-animation {
